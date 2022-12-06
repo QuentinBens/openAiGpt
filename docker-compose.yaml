@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  php:
+    build:
+      context: .
+    container_name: 'openAidGpt'
+    volumes:
+      - '.:/var/app'
+    working_dir: '/var/app'
+    command: 'tail -f /dev/null'
+    env_file:
+      - .env

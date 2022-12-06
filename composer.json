@@ -1,0 +1,21 @@
+{
+    "name": "quentin-bens/open-ai-gtp",
+    "description": "OpenAi GTP article generator",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Quentin BENARD",
+            "email": "benardq@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "orhanerday/open-ai": "^3.1",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0",
+        "symfony/dotenv": "6.0.x-dev"
+    }
+}
