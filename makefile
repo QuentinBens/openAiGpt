@@ -3,8 +3,8 @@ UID:=`id -u`
 GID:=`id -g`
 
 build:
-	DOCKER_UID=$(UID):$(GID) docker-compose build
 	cp .env.example .env
+	DOCKER_UID=$(UID):$(GID) docker-compose build
 run:
 	DOCKER_UID=$(UID):$(GID) docker-compose build
 	DOCKER_UID=$(UID):$(GID) docker-compose up -d

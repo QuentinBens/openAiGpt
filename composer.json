@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": ">=8.0",
         "orhanerday/open-ai": "^3.1",
         "guzzlehttp/guzzle": "^7.5"
     },
