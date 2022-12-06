@@ -10,6 +10,11 @@ $dotenv = new Dotenv();
 $dotenv->load(__DIR__.'/.env');
 
 define("OPEN_AI_KEY", getenv('OPEN_AI_KEY'));
+
+if (empty(OPEN_AI_KEY)) {
+    throw new Exception('Please add your open AI api key in .env');
+}
+
 // TODO implement VALUESERP_KEY
 //define("VALUESERP_KEY", getenv('VALUESERP_KEY'));
 
